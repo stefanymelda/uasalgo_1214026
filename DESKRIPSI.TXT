@@ -1,0 +1,12 @@
+------------------------------------------------------------------------
+Untuk membuat connect antara greenfoot dengan database mysql diperlukan
+sebuah koneksi JDBC, maka dari itu saya membuat sebuah class koneksi.
+Pada class koneksi terdapat codingan try dan catch yang artinya Statement 
+try memungkinkan kita untuk mendefinisikan blok kode yang akan diuji untuk 
+kesalahan yang akan dieksekusi. Sementara Statement catch memungkinkan kita 
+untuk mendefinisikan blok kode yang akan diuji, jika sebuah error terjadi 
+di dalam blok try.
+Lalu pada class bee turunan actor, tertulis if(Greenfoot.isKeyDown("l"))
+                setLocation(getX() -5, getY()); yang artinya aktor Bee 
+                tersebut akan bergerak keatas.  
+----------------------------------------------------------------------
