@@ -1,12 +1,16 @@
 ------------------------------------------------------------------------
-Untuk membuat connect antara greenfoot dengan database mysql diperlukan
-sebuah koneksi JDBC, maka dari itu saya membuat sebuah class koneksi.
-Pada class koneksi terdapat codingan try dan catch yang artinya Statement 
-try memungkinkan kita untuk mendefinisikan blok kode yang akan diuji untuk 
-kesalahan yang akan dieksekusi. Sementara Statement catch memungkinkan kita 
-untuk mendefinisikan blok kode yang akan diuji, jika sebuah error terjadi 
+Untuk membuat connect antara greenfoot dengan database mysql diperlukan sebuah driver JDBC, maka dari itu saya membuat sebuah class koneksi.
+- import java.sql.Connection = berfungsi untuk membangun sebuah koneksi ke MySQL, 
+dan dideklarasikan interface Connection dengan akses modifier private dan static untuk mendapatkan koneksi.
+- String DB = ini menunjukkan link dan nama dari database yang telah dibuat
+- JOptionPane.showMessageDialog = berfungsi untuk menampilkan tulisan "Tidak ada koneksi" apabila connection pada sql nya gagal.
+Pada class koneksi juga terdapat codingan try dan catch yang artinya 
+- Statement try memungkinkan kita untuk mendefinisikan blok kode yang akan diuji untuk kesalahan yang akan dieksekusi. 
+- Statement catch memungkinkan kita untuk mendefinisikan blok kode yang akan diuji, jika sebuah error terjadi 
 di dalam blok try.
 Lalu pada class bee turunan actor, tertulis if(Greenfoot.isKeyDown("l"))
                 setLocation(getX() -5, getY()); yang artinya aktor Bee 
                 tersebut akan bergerak keatas.  
+Setelah berhasil connect dengan database mysqlnya, maka kita bisa menginput lunci baru atau mengedit data nya dengan yang kita mau sehingga
+aktor bee tadi akan bergerak sesuai dengan kunci yang telah kita ganti tadi.
 ----------------------------------------------------------------------
