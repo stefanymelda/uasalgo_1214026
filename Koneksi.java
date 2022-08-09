@@ -7,7 +7,7 @@ public class Koneksi {
     private static Connection MySQLConfig;
     public static Connection configDB() throws SQLException {
         try {
-            String DB ="jdbc:mysql://localhost/codealgo";
+            String DB ="jdbc:mysql://localhost/connectalgo";
             String user="root";
             String pass="";
             MySQLConfig = (Connection) DriverManager.getConnection(DB,user,pass);
